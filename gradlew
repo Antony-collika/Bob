@@ -1,11 +1,11 @@
 #!/bin/sh
-# Gradle wrapper shim for Bob. Prefers a locally installed Gradle; otherwise
-# downloads the distribution named in gradle/wrapper/gradle-wrapper.properties.
+# Gradle wrapper shim for Bob. Always uses the distribution named in
+# gradle/wrapper/gradle-wrapper.properties. It must NOT prefer a
+# locally installed Gradle: on CI runners that can be a newer major
+# version than the Android Gradle Plugin supports (the runner's
+# Gradle 9.8.2 broke the build that needs Gradle 8.7).
 set -e
 APP_HOME=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-if command -v gradle >/dev/null 2>&1; then
-  exec gradle "$@"
-fi
 DIST_URL=$(grep '^distributionUrl=' "$APP_HOME/gradle/wrapper/gradle-wrapper.properties" | cut -d= -f2- | sed 's/\\:/:/g')
 DIST_DIR="$HOME/.gradle/wrapper/dists/bob-gradle"
 mkdir -p "$DIST_DIR"
