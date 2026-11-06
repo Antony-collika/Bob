@@ -15,5 +15,13 @@ if [ ! -f "$ZIP" ]; then
   if command -v curl >/dev/null 2>&1; then curl -L -o "$ZIP" "$DIST_URL"; else wget -O "$ZIP" "$DIST_URL"; fi
   (cd "$DIST_DIR" && unzip -o -q "$ZIP")
 fi
-GRADLE_BIN=$(find "$DIST_DIR" -maxdepth 2 -name gradle -type f | head -n 1)
+# The zip extracts to gradle-8.7/bin/gradle, which is 3 levels below
+# DIST_DIR, so maxdepth must be at least 3 (maxdepth 2 found nothing
+# and exec of an empty path failed with exit code 126).
+GRADLE_BIN=$(find "$DIST_DIR" -maxdepth 3 -name gradle -type f -path "*/bin/gradle" | head -n 1)
+if [ -z "$GRADLE_BIN" ]; then
+  echo "Khong tim thay file gradle trong $DIST_DIR" >&2
+  exit 1
+fi
+chmod +x "$GRADLE_BIN"
 exec "$GRADLE_BIN" "$@"
