@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- White rounded square -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M30,22 h48 a8,8 0 0 1 8,8 v48 a8,8 0 0 1 -8,8 H30 a8,8 0 0 1 -8,-8 V30 a8,8 0 0 1 8,-8 Z" />
+    <!-- Letter "B" drawn with indigo strokes -->
+    <path
+        android:strokeColor="@color/ic_launcher_background"
+        android:strokeWidth="7"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M44,36 V72 M44,36 H58 A10,10 0 0 1 58,54 H44 M44,54 H60 A10,10 0 0 1 60,72 H44" />
+</vector>

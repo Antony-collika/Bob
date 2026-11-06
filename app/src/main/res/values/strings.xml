@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bob</string>
+
+    <!-- Chat list -->
+    <string name="chat_list_title">Bob</string>
+    <string name="new_chat">Cuộc trò chuyện mới</string>
+    <string name="no_conversations">Chưa có cuộc trò chuyện nào</string>
+    <string name="start_chat_hint">Nhấn + để bắt đầu trò chuyện với AI.</string>
+    <string name="rename_conversation">Đổi tên cuộc trò chuyện</string>
+    <string name="conversation_title">Tên cuộc trò chuyện</string>
+    <string name="confirm_delete_conversation">Xóa cuộc trò chuyện?</string>
+
+    <!-- Common actions -->
+    <string name="search">Tìm kiếm</string>
+    <string name="tools">Công cụ</string>
+    <string name="settings">Cài đặt</string>
+    <string name="rename">Đổi tên</string>
+    <string name="delete">Xóa</string>
+    <string name="cancel">Hủy</string>
+    <string name="save">Lưu</string>
+    <string name="copy">Sao chép</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="edit_regenerate">Chỉnh sửa &amp; tạo lại</string>
+    <string name="regenerate">Tạo lại câu trả lời</string>
+    <string name="branch">Tạo nhánh mới</string>
+    <string name="delete_turn">Xóa lượt</string>
+    <string name="undo">Hoàn tác</string>
+    <string name="deleted_turn">Đã xóa lượt</string>
+    <string name="edited_label">đã chỉnh sửa</string>
+    <string name="fullscreen_edit">Toàn màn hình</string>
+
+    <!-- Chat -->
+    <string name="type_message">Nhập tin nhắn…</string>
+    <string name="send">Gửi</string>
+    <string name="stop">Dừng</string>
+    <string name="thinking">AI đang suy nghĩ…</string>
+    <string name="no_messages">Nhập câu hỏi bên dưới để bắt đầu.</string>
+    <string name="search_in_conversation">Tìm trong cuộc trò chuyện…</string>
+    <string name="choose_folder">Chọn thư mục</string>
+    <string name="workspace_needed">Chưa chọn thư mục workspace — các công cụ file đang bị tắt, các công cụ khác vẫn dùng bình thường.</string>
+    <string name="remove_workspace">Gỡ</string>
+    <string name="create_branch_title">Tạo nhánh khác?</string>
+    <string name="create_branch_message">Phía sau lượt này còn các lượt khác. Tạo nhánh mới để giữ nguyên cuộc hiện tại, hay tạo lại ngay tại đây (các lượt phía sau sẽ bị xóa)?</string>
+    <string name="branch_new">Tạo nhánh mới</string>
+    <string name="regenerate_here">Tạo lại tại đây</string>
+    <string name="tool_approval_title">Cho phép công cụ?</string>
+    <string name="approve">Cho phép</string>
+    <string name="decline">Từ chối</string>
+    <string name="image_from_gallery">Gửi ảnh từ thư viện</string>
+    <string name="take_photo">Chụp ảnh</string>
+    <string name="error_no_provider">Chưa nhập API key cho nhà cung cấp. Vào Cài đặt để thêm API key rồi thử lại.</string>
+
+    <!-- Tool calls -->
+    <string name="tool_success">Thành công</string>
+    <string name="tool_failed">Thất bại</string>
+    <string name="tool_result">Kết quả</string>
+
+    <!-- Settings -->
+    <string name="providers_title">Nhà cung cấp AI</string>
+    <string name="api_key">API key</string>
+    <string name="base_url">Base URL</string>
+    <string name="model">Mô hình</string>
+    <string name="default_provider">Nhà cung cấp mặc định</string>
+    <string name="system_prompt">Prompt hệ thống mặc định</string>
+    <string name="theme">Giao diện</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    <string name="theme_system">Theo hệ thống</string>
+    <string name="search_api_key">API key tìm kiếm web</string>
+    <string name="workspace_title">Thư mục workspace</string>
+
+    <!-- Tools -->
+    <string name="tools_title">Quản lý công cụ</string>
+    <string name="custom_name">Tên cho model</string>
+    <string name="custom_description">Mô tả cho model</string>
+    <string name="original_description">Mô tả gốc (chỉ xem)</string>
+    <string name="restore_defaults">Khôi phục mặc định</string>
+    <string name="control_label">Mức kiểm soát</string>
+    <string name="control_auto">Tự động</string>
+    <string name="control_ask">Hỏi trước khi làm</string>
+    <string name="control_off">Tắt</string>
+    <string name="done">Xong</string>
+
+    <!-- Search -->
+    <string name="search_hint">Tìm trong tất cả hội thoại…</string>
+    <string name="no_results">Không tìm thấy kết quả.</string>
+    <string name="searching">Đang tìm…</string>
+</resources>
