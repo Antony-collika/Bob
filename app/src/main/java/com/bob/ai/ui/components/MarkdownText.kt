@@ -289,7 +289,11 @@ private fun parseInline(
                     if (closeBracket == -1 || closeParen == -1) { append(text[i]); i++ } else {
                         val label = text.substring(i + 1, closeBracket)
                         val url = text.substring(openParen + 1, closeParen)
-                        withLink(LinkAnnotation.Url(url, linkStyle)) { append(label) }
+                        // withLink() only exists in Compose UI 1.8+, but the
+                        // 2024.09 BOM pins UI 1.7, so use the 1.7 addLink API.
+                        val linkStart = length
+                        append(label)
+                        addLink(LinkAnnotation.Url(url, linkStyle), linkStart, length)
                         i = closeParen + 1
                     }
                 }
