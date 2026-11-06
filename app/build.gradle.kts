@@ -62,6 +62,10 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3:1.3.0")
+    // Provides the View-based Theme.Material3.DayNight.NoActionBar parent
+    // and the colorSurface attr used by res/values/themes.xml. The Compose
+    // material3 library does not ship those Android resources.
+    implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.compose.material:material-icons-extended:1.7.2")
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.documentfile:documentfile:1.0.1")
